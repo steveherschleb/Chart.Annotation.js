@@ -24,7 +24,7 @@ module.exports = function(Chart) {
 
 		if (!isNaN(pixel)) {
       model.x = chartArea.left + options.leftOffset;
-      model.y = pixel + option.verticalOffset;
+      model.y = pixel + options.verticalOffset;
 		}
 
     model.value = options.value;
