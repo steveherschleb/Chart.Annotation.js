@@ -14,17 +14,20 @@ var defaultOptions = Chart.Annotation.defaults = {
 
 var lineAnnotation = require('./line.js')(Chart);
 var boxAnnotation = require('./box.js')(Chart);
+var textAnnotation = require('./text.js')(Chart);
 
 // Map of all types
 var annotationTypes = Chart.Annotation.annotationTypes = {
 	line: lineAnnotation.Constructor,
-	box: boxAnnotation.Constructor
+	box: boxAnnotation.Constructor,
+	text: textAnnotation.Constructor
 };
 
 // Map of all update functions
 var updateFunctions = Chart.Annotation.updateFunctions = {
 	line: lineAnnotation.update,
-	box: boxAnnotation.update
+	box: boxAnnotation.update,
+	text: textAnnotation.update
 };
 
 // Chartjs Zoom Plugin
