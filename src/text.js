@@ -8,10 +8,10 @@ module.exports = function(Chart) {
 			// Canvas setup
       ctx.font = view.font;
       ctx.fillStyle = view.fillStyle;
-      ctx.textAlign = view.textAlign; 
-			
+      ctx.textAlign = view.textAlign;
+
       // Draw
-      ctx.fillText(view.value, view.x1, view.y1);
+      ctx.fillText(view.value, view.x, view.y);
 		}
 	});
 
